@@ -1,0 +1,13 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+    command: bash
+    volumes:
+      - .:/app:cached
+      - bundles:/bundles
+
+volumes:
+  bundles:
+  data:
